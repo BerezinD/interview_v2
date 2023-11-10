@@ -10,6 +10,6 @@ public class Application {
         String type = scanner.next();
         System.out.println("Enter payload: ");
         String payload = scanner.next();
-        eventProcessor.processEvent(new Event(type, payload));
+        eventProcessor.processEvent(new Event(EventType.valueOf(type), payload));
     }
 }

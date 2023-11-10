@@ -24,6 +24,5 @@ public class Application {
         System.out.println("Time: " + (System.currentTimeMillis() - start));
         System.out.println("Calculation count: " + calculationService.getCalculationCount());
         executor.shutdown();
-
     }
 }
